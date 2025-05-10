@@ -1,0 +1,154 @@
+:root {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    --light-grey: rgb(190, 190, 190);
+    --blue: rgb(76, 142, 222);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    background-color: var(--blue);
+    color: white;
+    gap: 20px;
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+}
+
+.sidebar-section > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar-section > div > img {
+    height: 1.25em;
+    width: 1.25em;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(177deg) brightness(105%) contrast(101%);
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-section > div > a {
+    font-size: 18px;
+}
+
+#sidebar-header {
+    font-size: 24px;
+}
+
+#special-icon {
+    height: 1.5em;
+    width: 1.5em;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(177deg) brightness(105%) contrast(101%);
+    padding: 0;
+}
+
+.main-container {
+    width: 78%;
+    background-color: var(--light-grey);
+}
+
+.header {
+    width: auto;
+    background-color: white;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.account-bar > img {
+    height: 1.3em;
+    width: 1.3em;
+}
+
+.profile-icon {
+    height: 2em;
+    width: 2em;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar > img {
+    height: 1.3em;
+    width: 1.3em;
+}
+
+.search-bar > div {
+    background-color: var(--light-grey);
+    border-radius: 15px;
+    height: 1.25em;
+    width: 30vh;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#smaller-text {
+    font-size: 13px;
+}
+
+#header-button {
+    background-color: var(--blue);
+    border-radius: 20px;
+    height: 2.5em;
+    width: 6em;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.profile-icon-big {
+    height: 4em;
+    width: 4em;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+
+
