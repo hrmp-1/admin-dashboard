@@ -132,6 +132,7 @@ body {
 
 #smaller-text {
     font-size: 13px;
+    font-weight: 500;
 }
 
 #header-button {
@@ -151,4 +152,44 @@ body {
     border-radius: 50%;
 }
 
+.main-elements {
+    display: flex;
+    height: 100vb;
+}
 
+.project-container {
+    flex: .75;
+    background-color: blue;
+    padding: 24px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notification-container {
+    flex: .25;
+    background-color: red;
+    padding: 24px 24px 24px 24px;
+}
+
+.project-flexbox {
+    display: flex;
+}
+
+.project-flexbox > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    width: 20rem;
+    height: 10rem;
+}
+
+.card-svg {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 1.3em;
+    width: 1.3em;
+}
