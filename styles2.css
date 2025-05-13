@@ -1,0 +1,231 @@
+:root {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    --blue: #1c94d3;
+    --yellow: #e3b030;
+    --white: #ffffffff;
+    --light-grey: #e2e8f0;
+}
+
+body {
+    height: 100vh;
+    height: 100dvh;
+    background-color: var(--light-grey);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 0;
+}
+
+header {
+    background-color: var(--white);
+    display: grid;
+    grid-template-rows: 6vh 1fr;
+}
+
+sidebar {
+    background-color: var(--blue);
+    display: grid;
+    align-content: start;
+    gap: 3rem;
+    padding: 16px 16px;
+} 
+
+p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+circle {
+    border-radius: 50%;
+}
+
+button {
+    background-color: var(--blue);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.top, .bottom {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left, .top-right, .bottom-left, .bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}   
+
+.top-right > circle {
+    background-color: #e3b030;
+    height: 2rem;
+    width: 2rem;
+}
+
+.top-left > img, .top-right > img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.top-left > div {
+    height: 1.5rem;
+    width: 30rem;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+}
+
+.bottom-left > circle {
+    height: 4rem;
+    width: 4rem;
+    background-color: #e3b030;
+}
+
+.bottom-left > div > p {
+    font-size: 13px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+}
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 300px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 16px;
+    align-content: start;
+}
+
+.card-container > div {
+    height: 220px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-container > div > div {
+    height: 100%;
+    width: 100%;
+    border-left: 8px solid var(--yellow);
+    border-top: none;
+    border-bottom: none;
+    display: grid;
+    grid-template-rows: 1fr 80px;
+}
+
+.project-buttons {
+    background-color: #1c94d3;
+}
+
+.project-buttons > img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.announcements, .trending {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(10px, 425px));
+    gap: 16px;
+}
+
+.announcements > .cards > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.announcements > .cards > div:nth-last-child(2), .announcements > .cards > div:nth-last-child(3)  {
+    border-bottom: 2px solid var(--light-grey);
+    padding-bottom: 18px;
+}
+
+.trending > .cards > div > circle {
+    height: 3rem;
+    width: 3rem;
+    background-color: #e3b030;
+}
+
+.trending > .cards > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trending > .cards > div > div > p {
+    color: rgb(162, 162, 162);
+    font-weight: 400;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    /*display: grid*/
+    /*grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));*/
+    gap: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 36px;
+}
+
+#header > div > img{
+    height: 2rem;
+    width: 2rem;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(177deg) brightness(105%) contrast(101%);
+}
+
+#header > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#header > div > p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.dashboard-buttons > div > img{
+    height: 1.5rem;
+    width: 1.5rem;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(177deg) brightness(105%) contrast(101%);
+}
+
+.dashboard-buttons {
+    display: grid;
+    gap: 8px;
+}
+
+.dashboard-buttons > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dashboard-buttons > div > p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
